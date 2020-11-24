@@ -22,5 +22,13 @@ public class RectangleTest {
         assertEquals (6, area);
     }
 
-    
+    @Test
+    public void shouldGiveAreaLMultipledByBForAnyRectange() {
+        double len = 12.3;
+        double br = 14.6;
+        Rectangle rectangle = new Rectangle(len, br);
+        double area = rectangle.getArea();
+        double expected = len * br;
+        assertEquals (expected, area);
+    }
 }

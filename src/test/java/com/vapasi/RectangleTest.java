@@ -2,7 +2,7 @@ package com.vapasi;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class RectangleTest {
@@ -17,4 +17,10 @@ public class RectangleTest {
         assertEquals (expected, area);
     }
 
+
+    @Test
+    public void shouldGivePerimeterFourForLengthAndBreadthOne() {
+        Rectangle rectangle = new Rectangle(1 , 1);
+        assertEquals(4, rectangle.getPerimeter());
+    }
 }

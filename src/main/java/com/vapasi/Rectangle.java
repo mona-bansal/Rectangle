@@ -5,7 +5,7 @@ public class Rectangle {
     private double length;
     private double breadth;
 
-    public Rectangle(double length, double breadth) {
+    Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
@@ -17,4 +17,9 @@ public class Rectangle {
     public double getPerimeter() {
         return 2 * (length + breadth);
     }
+
+    public static Rectangle createSquare(double side) {
+        return new Rectangle (side, side);
+    }
+
 }

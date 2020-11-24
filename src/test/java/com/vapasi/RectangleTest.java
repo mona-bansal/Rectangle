@@ -19,8 +19,12 @@ public class RectangleTest {
 
 
     @Test
-    public void shouldGivePerimeterFourForLengthAndBreadthOne() {
-        Rectangle rectangle = new Rectangle(1 , 1);
-        assertEquals(4, rectangle.getPerimeter());
+    public void shouldGivePerimeterForAnyCoOrdinates() {
+        double len = 12.3;
+        double br = 14.6;
+
+        Rectangle rectangle = new Rectangle(len , br);
+        double expectedPerimeter = 2 * (len + br);
+        assertEquals(expectedPerimeter, rectangle.getPerimeter());
     }
 }

@@ -13,4 +13,12 @@ public class SquareTest {
         Square square = new Square(side);
         assertEquals(expectedArea,square.getArea());
     }
+
+    @Test
+    public void shouldGivePerimeterOfASquare() {
+        double side = 1.435;
+        double expectedPerimeter = 4 * (side);
+        Square square = new Square(side);
+        assertEquals(expectedPerimeter,square.getPerimeter());
+    }
 }
